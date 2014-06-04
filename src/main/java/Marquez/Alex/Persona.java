@@ -12,13 +12,15 @@ package Marquez.Alex;
  */
 public class Persona {
     
-    Perro perro;
+    private Mascota mascota;
+    
+    //Perro perro;
 
-    public Perro getPerro() {
-        return perro;
+    public Mascota getMascota() {
+        return mascota;
     }
 
-    public void setPerro(Perro perro) {
-        this.perro = perro;
+    public void setMascota(Mascota mascota) {
+        this.mascota = mascota;
     }
 }

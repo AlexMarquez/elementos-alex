@@ -10,6 +10,9 @@ package Marquez.Alex;
  *
  * @author T107
  */
-public class Mascota {
+public interface Mascota {
+    
+    public String obtenerRegistro();
+        
     
 }

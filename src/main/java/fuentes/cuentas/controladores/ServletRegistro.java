@@ -6,6 +6,8 @@
 
 package fuentes.cuentas.controladores;
 
+import Marquez.Alex.Gato;
+import Marquez.Alex.Mascota;
 import Marquez.Alex.Perro;
 import Marquez.Alex.Persona;
 import java.io.IOException;
@@ -34,10 +36,10 @@ public class ServletRegistro extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        Perro perro=new Perro();
-        perro.setNombre(("Chompi"));
+        Mascota mascota=new Gato();
+        //mascota.setNombre(("Chompi"));
         Persona x=new Persona();
-        x.setPerro(perro);
+        x.setMascota(mascota);
         request.setAttribute("registro", x);
         RequestDispatcher despachador=request.getRequestDispatcher("/registro.jsp");
         despachador.forward(request, response);

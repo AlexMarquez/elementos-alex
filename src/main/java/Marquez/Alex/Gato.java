@@ -10,9 +10,9 @@ package Marquez.Alex;
  *
  * @author T107
  */
-public class Perro implements Mascota{
+public class Gato implements Mascota {
     
-    String nombre;
+        String nombre;
 
     public String getNombre() {
         return nombre;
@@ -24,7 +24,7 @@ public class Perro implements Mascota{
     
     @Override
     public String obtenerRegistro(){
-        return "El perrito que registraste es: " + nombre;
+        return "Se acaba de registrar un gato: " ;
     }
     
 }
